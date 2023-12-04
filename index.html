@@ -34,12 +34,17 @@
             <li><a class="link nav-menu" href="">Contacts</a></li>
           </ul>
         </nav>
-        <button class="mobile-menu-open-button" type="button">
+        <button
+          class="mobile-menu-open-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
           <svg
             class="mobile-menu-open-button-icon"
             width="32"
             height="22"
-            aria-label="open mobile menu icon"
+            aria-label="open-mobile-menu-icon"
           >
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -554,43 +559,12 @@
       </div>
     </div> -->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    </div>
-
-    <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-
     <!-- =============== MOBILE MENU -->
-    <div class="mobile-menu-container">
-      <button class="mobile-menu-container-close-button" type="button">
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="mobile-menu-container-close-button js-close-menu"
+        type="button"
+      >
         <svg
           class="mobile-menu-container-close-button-icon"
           width="8"
@@ -601,7 +575,7 @@
       </button>
 
       <nav class="mobile-menu-navigation">
-        <ul class="list nav-list">
+        <ul class="list manu-nav-list">
           <li>
             <a class="link nav-menu current" href="./index.html">Studio</a>
           </li>
@@ -656,5 +630,13 @@
         </li>
       </ul>
     </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src=".js/mobile-menu.js"></script>
   </body>
 </html>
