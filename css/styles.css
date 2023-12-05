@@ -1435,8 +1435,8 @@ footer {
 }
 
 .page-header {
-  display: flex;
-  align-items: center;
+  
+  
   border-bottom: 1px solid var(--CORNFLOWER);
   background: var(--WHITE);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -1616,7 +1616,7 @@ footer {
 }
 
 .features {
-  padding: 96px 0;
+  padding: 0;
 }
 .features-list {
   display: flex;
@@ -1702,7 +1702,7 @@ footer {
 .team {
   background-color: var(--CLOUD);
 
-  padding: 120px 0;
+  padding: 0;
 }
 
 .team-header {
@@ -1805,7 +1805,7 @@ footer {
 }
 
 .clients {
-  padding-top: 120px;
+  
   padding-bottom: 120px;
 }
 
