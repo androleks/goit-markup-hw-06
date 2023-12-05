@@ -89,6 +89,7 @@ button {
 }
 
 .page-header {
+  display: flex;
   align-items: center;
   border-bottom: 1px solid var(--CORNFLOWER);
   background: var(--WHITE);
@@ -174,9 +175,16 @@ button {
 
 .address-list {
   display: flex;
+  flex-direction: row;
   gap: 40px;
 }
 .address-text {
+  display: flex;
+  width: 153px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+
   color: var(--SLATE);
 
   font-size: 16px;
@@ -260,18 +268,21 @@ button {
 .studio-header {
   color: var(--WHITE);
 }
+
 .features {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .features-list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .features-item {
   display: flex;
   min-width: 264px;
-  flex-direction: column;
+
   justify-content: center;
   gap: 8px;
 
